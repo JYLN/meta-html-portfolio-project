@@ -1,0 +1,173 @@
+@import url(https://fonts.bunny.net/css?family=inter:400,700|inter-tight:400,400i,700,700i);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 2rem 4rem;
+  background-color: #fff0dd;
+  font-family: 'Inter', sans-serif;
+}
+
+header > img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #9d4839;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+nav menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li a {
+  color: #fff0dd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+li:not(:last-of-type)::after {
+  width: 1px;
+  content: '|';
+  margin: 0 1rem;
+  position: relative;
+  top: -1px;
+  color: #76352a;
+}
+
+.promo {
+  padding: 5rem 2.75rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url('../img/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.promo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.promo p {
+  margin-bottom: 0.85rem;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 4rem;
+}
+
+article {
+  background-color: #e5d3c6;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+article > * {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  color: #9d4839;
+  font-size: 1.5rem;
+}
+
+article img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  background-color: #76352a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+footer p {
+  text-align: right;
+  color: #fff0dd;
+  font-size: 0.85rem;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+.btn {
+  display: flex;
+  text-decoration: none;
+  width: fit-content;
+  padding: 0.65rem 1.5rem;
+  background-color: #726962;
+  color: #fff0dd;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3f3a36;
+}
+
+.btn-promo {
+  background-color: #9d4839;
+  color: #e5d3c6;
+}
+
+.btn-promo:hover {
+  background-color: #76352a;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
